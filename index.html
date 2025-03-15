@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Expense Tracker</title>
+    <link rel="icon"href="img/wallet.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js library -->
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <h2>Wallet Tracker</h2>
+            <button onclick="navigateTo('income')">Income</button>
+            <button onclick="navigateTo('expense')">Add Expense</button>
+            <button onclick="navigateTo('tracker')">Tracker</button>
+        </nav>
+
+        <!-- Content Area for Each Page -->
+        <div class="content">
+            <!-- Income Section -->
+            <section id="income-section" class="card-section">
+                <h3>Total Income</h3>
+                <div class="form">
+                    <input type="number" id="income-amount" placeholder="Enter Income">
+                    <button onclick="setIncome()">Set Income</button>
+                </div>
+                <h4>Current Income: ₹<span id="total-income">0</span></h4>
+            </section>
+
+            <!-- Expense Section -->
+            <section id="expense-section" class="card-section">
+                <h3>Add Expense</h3>
+                <div class="form">
+                    <input type="text" id="expense-name" placeholder="Expense Name">
+                    <input type="number" id="expense-amount" placeholder="Amount">
+                    <button onclick="addExpense()">Add Expense</button>
+                </div>
+            </section>
+
+            <!-- Tracker Section -->
+            <section id="tracker-section" class="card-section">
+                <h3>Expenses & Balance</h3>
+                <ul id="expense-list"></ul>
+                <h4>Total Expenses: ₹<span id="total-amount">0</span></h4>
+                <h4>Balance: ₹<span id="current-balance">0</span></h4>
+                <h3>Expense Chart</h3>
+                <div class="chart-container">
+                    <canvas id="expenseChart"></canvas>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+}
+
+.app-container {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #4CAF50;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+    background-color: #3e8e41;
+    color: white;
+}
+
+/* Main Content */
+.content {
+    width: 75%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Card-Like Section for Each Page */
+.card-section {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    text-align: center;
+}
+
+.card-section h3 {
+    margin-bottom: 15px;
+}
+
+.card-section .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card-section input, .card-section button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.card-section button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Expenses List */
+#expense-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#expense-list li {
+    margin-top: 5px;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Chart Container with Dark Background */
+.chart-container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #0c8880; /* Dark navy background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0f7fa; /* Light cyan for a wallet-like feel */
+    min-height: 100vh;
+    color: #333;
+}
+
+.app-container {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+/* Sidebar Background */
+.sidebar {
+    width: 25%;
+    background-color: #00796b; /* Teal for contrast */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main Content Background */
+.content {
+    width: 75%;
+    padding: 20px;
+    background-color: #ffffff; /* White background for clarity */
+    border-left: 2px solid #eeeeee;
+}
+
+/* Expense Card Styling */
+.card-section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fafafa; /* Light grey to differentiate sections */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Consistent Form and Button Styling */
+.card-section .form input,
+.card-section .form button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
